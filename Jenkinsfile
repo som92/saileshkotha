@@ -6,10 +6,6 @@ node {
       echo "uploading package..."
     }
     stage('done') {
-      echo "Done I am somesh waste fellow"
+      echo "Done I am sailesh good fellow"
     }
-
-
-
-
 }
