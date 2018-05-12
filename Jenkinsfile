@@ -2,10 +2,12 @@ node {
     stage('checkout') {
       checkout scm
     }
-    stage('publish') {
-      echo "uploading package..."
+    stage('build packer') {
+      sh """
+         packer build
+      """
     }
     stage('done') {
-      echo "Done I am sailesh good fellow"
+      echo "Done packer is built"
     }
 }
